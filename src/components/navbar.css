@@ -1,0 +1,92 @@
+:root {
+  --menu-color: #f6f7fb;
+}
+header {
+  padding-block: 2rem;
+  position: relative;
+}
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-list {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--menu-color);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.menu-list > span {
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 0.2rem;
+  height: 3rem;
+  left: 50%;
+  transform: rotate(90deg);
+}
+.menu-list .top-bar {
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+.menu-list .bottom-bar {
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+.bottom-bar.bottom-bar-rotate {
+  transform: rotate(-45deg);
+  margin: 0;
+}
+.top-bar.top-bar-rotate {
+  transform: rotate(45deg);
+  margin: 0;
+}
+
+.logo-item {
+  display: flex;
+  justify-content: flex-start;
+}
+.info-item {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+.info-item > * {
+  cursor: pointer;
+}
+.info-item .search-icon {
+  position: relative;
+}
+.info-item .search-icon .show-search {
+  position: absolute;
+  top: 20%;
+  left: -10rem;
+  transition: all 0.3s;
+  width: 25rem;
+  height: 3rem;
+}
+.info-item .search-icon input {
+  border: 2px solid #f6f7fb;
+  border-radius: 5rem;
+  padding: 1.5rem 0rem 1.5rem 4.5rem;
+  outline: none;
+  max-width: 26rem;
+  width: 26rem;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+.info-item .search-icon input::placeholder {
+  color: black;
+}

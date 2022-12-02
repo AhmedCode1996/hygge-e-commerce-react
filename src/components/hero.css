@@ -1,0 +1,47 @@
+:root {
+  --heading-color: #2975ff;
+  --button-green-color: #00cc96;
+  --hero-background: #f6f7fb;
+}
+.hero {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 5rem;
+  border-radius: 6rem;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--hero-background);
+}
+.hero .hero-info {
+    display: flex;
+    flex-direction: column;
+}
+.hero h2 {
+  color: var(--heading-color);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 2.5rem;
+}
+.hero button {
+  outline: none;
+  border: none;
+  padding: 2rem 4rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  background-color: var(--button-green-color);
+  width: fit-content;
+}
+.hero button a {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}

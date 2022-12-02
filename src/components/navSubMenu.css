@@ -1,0 +1,22 @@
+:root {
+  --text-dark: rgb(26, 32, 44);
+  --text-dark-light: rgba(26, 32, 44, 0.604);
+  --green-active: #00CC96;
+}
+.nav-sub-menu {
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 90px);
+  margin-top: 90px;
+}
+.nav-sub-list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+  padding: 1rem;
+  font-weight: normal;
+}

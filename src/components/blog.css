@@ -1,0 +1,38 @@
+.blog {
+  display: grid;
+  color: var(--text-color);
+}
+.blog:first-child {
+  grid-column: 1 / 3;
+}
+
+.blog .blog-image {
+  position: relative;
+  height: 30rem;
+}
+.blog .blog-image img {
+  height: 100%;
+  border-radius: 5rem;
+}
+.blog .blog-image .blog-tag {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+}
+
+.blog .blog-title {
+  margin-block: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.blog .blog-category {
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  width: fit-content;
+}

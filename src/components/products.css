@@ -1,0 +1,40 @@
+.products {
+  padding-block: 5rem;
+}
+.products .products-title {
+  color: var(--blueColor);
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.products .products-description {
+  color: var(--textColor);
+  font-size: 4rem;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 5rem;
+}
+.products-list {
+  display: grid;
+  column-gap: 6rem;
+  row-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.products .products-btn {
+  outline: none;
+  border: none;
+  padding: 2rem 4rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  background-color: var(--button-green-color);
+  width: fit-content;
+  display: block;
+  margin-inline: auto;
+  margin-block: 5rem;
+}
+.products .products-btn a {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}

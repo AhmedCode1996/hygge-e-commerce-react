@@ -1,0 +1,57 @@
+.contact {
+  padding-block: 5rem;
+}
+.contact .contact-services {
+  padding-block: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 10rem;
+}
+.contact .contact-services .contact-item h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.contact .contact-services .contact-item p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+.contact .contact-information {
+  padding-block: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 10rem;
+}
+.contact .contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 8rem;
+  padding: 2rem;
+  width: 100%;
+}
+.contact-form .subject-form select {
+    border-radius: 3rem;
+    border: 2px solid var(--icon-background);
+    padding: 2rem;
+    width: 60%;
+    background-color: transparent;
+    outline: none;
+    transition: all 0.3s;
+}
+.subject-form select:focus {
+    border: 2px solid var(--button-green-color)
+}
+.contact-form .message-form textarea {
+    border-radius: 2rem;
+    width: 100%;
+    border: 2px solid var(--icon-background);
+    outline: none;
+    padding: 2rem;
+    transition: all 0.3s;
+}
+.message-form textarea:focus {
+    border: 2px solid var(--button-green-color)
+}

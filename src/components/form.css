@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5rem;
+  max-width: 50%;
+  margin-inline: auto;
+  padding: 2rem;
+}
+.form p {
+  width: 100%;
+}
+.form input {
+  border: 2px solid var(--icon-background);
+  outline: none;
+  padding: 2rem 1.5rem;
+  border-radius: 5rem;
+  transition: all 0.3s;
+  font-size: 2rem;
+  width: 100%;
+}
+.form label {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.form input::-webkit-input-placeholder {
+  color: #a3a6ab;
+}
+.form input:focus {
+  border: 2px solid var(--button-green-color);
+}
+.form .email-form,
+.form .password-form {
+  position: relative;
+}
+.form > p:not(.radio-form) label {
+  position: absolute;
+  top: -3rem;
+  left: 1.5rem;
+}
+.form .radio-form {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.form .radio-form input {
+  width: fit-content;
+}

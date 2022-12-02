@@ -1,0 +1,25 @@
+:root {
+    --heading-color: #2975ff;
+    --background-color: #f6f7fb;
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    /* padding: 1rem; */
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 15rem;
+    height: 12rem;
+
+  }
+  .category .category-image {
+    width: 32px;
+  }
+  .category .category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }

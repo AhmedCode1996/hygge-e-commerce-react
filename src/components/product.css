@@ -1,0 +1,75 @@
+:root {
+  --link-color: #00cc96;
+  --image-background: #f6f7fb;
+  --text-color: #1A202C
+}
+.product {
+  display: grid;
+  color: var(--text-color)
+}
+.product .product-image {
+  position: relative;
+  background-color: var(--image-background);
+  height: 30rem;
+  text-align: center;
+  border-radius: 5rem;
+  padding: 3.5rem;
+}
+.product .product-image img {
+  height: 100%;
+}
+.product .product-image .product-discount {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+}
+.product .product-image .product-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%);
+  background-color: var(--link-color);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: none;
+  transition: all 0.3s;
+}
+
+.product .product-image:hover .product-link {
+  display: block;
+}
+
+.product .product-title {
+  margin-block: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.product .card-information {
+  display: flex;
+  column-gap: 3rem;
+  align-items: center;
+  font-weight: bold;
+}
+.product .card-information .card-category {
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+}
+.card-information .card-price {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.card-information .card-price .old-card-price {
+  color: #84858b;
+  margin-right: 0.6rem;
+  font-size: 1.5rem;
+}

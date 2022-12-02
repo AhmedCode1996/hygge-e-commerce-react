@@ -1,0 +1,26 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  justify-content: center;
+  color: var(--textColor);
+  padding: 1rem;
+}
+.service .service-icon {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  padding: 1.4rem;
+  background-color: var(--icon-background);
+}
+
+.service .service-title {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.service .service-information {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.6;
+}

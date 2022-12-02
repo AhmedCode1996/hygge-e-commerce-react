@@ -1,0 +1,43 @@
+.job-section {
+  padding-block: 5rem;
+}
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
+}
+.job-filter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+  padding: 3rem;
+  border-radius: 5rem;
+  border: 2px solid var(--icon-background);
+}
+.job-filter .filter-title {
+  margin-bottom: 4rem;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.job-information {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.job-wrapper {
+  padding: 3rem;
+  border-radius: 5rem;
+  border: 2px solid var(--icon-background);
+}
+.job-wrapper h2 {
+  margin-bottom: 2.4rem;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.job-wrapper p {
+  margin-bottom: 4.8rem;
+  font-size: 2rem;
+  line-height: 1.6;
+}

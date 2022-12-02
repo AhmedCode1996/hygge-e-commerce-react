@@ -1,0 +1,15 @@
+.faq {
+  padding-block: 5rem;
+}
+.faq .faq-title {
+  margin-bottom: 3rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.faq .faq-list-item .faq-list-item-single {
+  display: grid;
+  gap: 3rem 5rem;
+  margin-bottom: 6rem;
+  grid-template-columns: repeat(2, 1fr);
+}

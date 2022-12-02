@@ -1,0 +1,28 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.review.hide {
+  opacity: 0;
+  display: none;
+}
+.review.show {
+  opacity: 1;
+  display: block;
+}
+.review .review-list-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 2px solid #00cc96;
+  overflow: hidden;
+}
+.review .review-list-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.review .review-list-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}

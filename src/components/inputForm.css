@@ -1,0 +1,26 @@
+p {
+  width: 100%;
+  position: relative;
+}
+label {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  position: absolute;
+  top: -3rem;
+  left: 1.5rem;
+}
+input {
+  border: 2px solid var(--icon-background);
+  outline: none;
+  padding: 2rem 1.5rem;
+  border-radius: 5rem;
+  transition: all 0.3s;
+  font-size: 2rem;
+  width: 100%;
+}
+input::-webkit-input-placeholder {
+  color: #a3a6ab;
+}
+input:focus {
+  border: 2px solid var(--button-green-color);
+}
