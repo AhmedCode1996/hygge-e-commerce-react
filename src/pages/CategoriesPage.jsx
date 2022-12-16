@@ -1,14 +1,20 @@
-import { useState } from 'react';
 import './../components/products.css';
-import productsData from '../data/products';
+import { useEffect, useState } from 'react';
 import Heading from '../components/Heading';
 import Product from '../components/Product';
+import supabase from '../config/data';
 const CategoriesPage = () => {
-  for (let [index, product] of productsData.entries()) {
-    product.id = index;
-  }
+  const [products, setProducts] = useState([]);
 
-  const [products] = useState(productsData);
+  const fetchData = async () => {
+    const { data, error } = await supabase.from('categories').select();
+    error && console.log(error);
+    data && setProducts(data);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <section className="products">
       <Heading
@@ -17,8 +23,8 @@ const CategoriesPage = () => {
         position="left"
       />
       <div className="products-list">
-        {products.map((el, index) => {
-          return <Product key={index} {...el} />;
+        {products.map((el) => {
+          return <Product key={el.id} {...el} />;
         })}
       </div>
     </section>

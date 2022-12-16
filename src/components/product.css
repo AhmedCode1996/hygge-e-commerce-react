@@ -1,15 +1,16 @@
 :root {
   --link-color: #00cc96;
   --image-background: #f6f7fb;
-  --text-color: #1A202C
+  --text-color: #1a202c;
 }
 .product {
   display: grid;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 .product .product-image {
   position: relative;
   background-color: var(--image-background);
+  background-repeat: no-repeat;
   height: 30rem;
   text-align: center;
   border-radius: 5rem;
@@ -63,6 +64,7 @@
   padding: 1rem 1.5rem;
   border-radius: 3rem;
   font-size: 1.4rem;
+  text-transform: uppercase;
 }
 .card-information .card-price {
   font-size: 1.7rem;

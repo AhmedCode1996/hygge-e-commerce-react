@@ -11,6 +11,7 @@ import product2 from './../assets/singleProducts/Product2.svg';
 import product3 from './../assets/singleProducts/Product3.svg';
 import product4 from './../assets/singleProducts/Product4.svg';
 
+
 const products = [
   {
     id: 1,

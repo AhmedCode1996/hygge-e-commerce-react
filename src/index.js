@@ -1,11 +1,21 @@
-import ReactDOM from 'react-dom/client';
+import {createRoot} from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import './index.css';
-import { SignUp, Login, Contact, Faq, Jobs, CategoriesPage, Search } from './pages';
+import {
+  SignUp,
+  Login,
+  Contact,
+  Faq,
+  Jobs,
+  CategoriesPage,
+  Search,
+} from './pages';
 import AboutUs from './pages/AboutUs';
 import SingleProduct from './components/SingleProduct';
+import { ProductsContext } from './globalData/ProductsContext';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -55,5 +65,9 @@ const router = createBrowserRouter([
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<RouterProvider router={router} />);
+const root = createRoot(document.getElementById('root'));
+root.render(
+  <ProductsContext>
+    <RouterProvider router={router} />
+  </ProductsContext>
+);

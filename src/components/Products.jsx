@@ -1,18 +1,18 @@
-import { useState } from 'react';
 import './products.css';
-import productsData from '../data/products';
 import Product from './Product';
 import { Link } from 'react-router-dom';
+import { useGlobalProductContext } from './../globalData/ProductsContext';
+
 const Products = () => {
-  const [products] = useState(productsData);
+  const data = useGlobalProductContext();
+
   return (
     <section className="products">
       <h2 className="products-title">- Our Products</h2>
       <h4 className="products-description">Explore our Products</h4>
       <div className="products-list">
-        {products.map((el, index) => {
-          if (index === 9) return;
-          return <Product key={index} {...el} />;
+        {data.slice(0, 9).map((el) => {
+          return <Product key={el.id} {...el} />;
         })}
       </div>
       <button className="btn products-btn">
